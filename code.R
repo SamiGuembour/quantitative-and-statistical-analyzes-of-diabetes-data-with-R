@@ -1,4 +1,4 @@
-setwd("D:/Cours MOOC/Introduction à la statistique avec R/Applications") #pour le répertoire
+setwd("D:/Cours MOOC/Introduction Ã  la statistique avec R/Applications") #pour le rÃ©pertoire
 diab <- read.csv("diabetes.csv")
 str(diab)
 table(diab$Outcome)
@@ -49,4 +49,4 @@ explicatives <-  c("Age","Pregnancies","Glucose","BloodPressure","SkinThickness"
 fpca(data = diab, y=expliquer, x=explicatives, partial="No")
 
 cah <- hclust(dist(t(scale(diab))), method="ward.D") #le "t" pour classer les variables et non pas les individus
-plot(cah,main="classification hiérarchique")
+plot(cah,main="classification hiÃ©rarchique")
